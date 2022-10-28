@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trenitalia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="p-3 px-5 bg-danger rounded-1">
+                <h2 class="text-center text-white pb-2">
+                    CALCOLA IL PREZZO DEL TUO BIGLIETTO
+                </h2>
+                <div class="bg-light mb-3 pb-3 rounded-3">
+                    <div class="px-5 py-3 d-flex justify-content-center align-items-center">
+                        <div>
+                            <h6 class="text-danger text-center pb-2">
+                                Nome Cognome
+                            </h6>
+                            <textarea class="border-danger rounded-2 p-1" id="full-name" cols="16" rows="1"></textarea>
+                        </div>
+                        <div class="px-4">
+                            <h6 class="text-danger text-center pb-2">
+                                Km da percorrere
+                            </h6>
+                            <textarea class="border-danger rounded-2 p-1" id="chilometri" cols="16" rows="1"></textarea>
+                        </div>
+                        <div >
+                            <h6 class="text-danger text-center pb-2">
+                                Fascia d'età
+                            </h6>
+                            <select id="eta" class="border-danger p-1 rounded-2" >
+                                <option value="">Maggiorenne</option>
+                                <option value="20">Minorenne</option>
+                                <option value="40">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 justify-content-center align-items-center">
+                        <button id="genera" class="btn btn-secondary text-danger border-1 border-warning fw-semibold me-3">Genera</button>
+                        <button id="annulla" class="btn btn-secondary text-danger border-1 border-warning fw-semibold">annulla</button>
+                    </div>
+
+                </div>
+                <h2 class="text-white text-center mb-1">IL TUO BIGLIETTO</h2>
+                <div class="p-2  bg-white">
+                    <h5 class="mt-2">DETTAGLI PASSEGGERI</h5>
+                    <div class="row flex-row ">
+                        <div class="col">
+                            <div class="bg-secondary px-2 border border-1 border-dark">
+                                <h6 class=" fs-6">PASSEGGERO</h6>
+                                <div class="pb-5" id="nome-passeggero">nome-cognome</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="px-2 ">
+                                <div class="fw-semibold mb-5">Offerta</div>
+                                <div id="sconto"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="fw-semibold mb-5">Carrozza</div>
+                                <div>7</div>
+                        </div>
+                        <div class="col">
+                            <div class="fw-semibold mb-5">Posto</div>
+                                <div>21</div>
+                        </div>
+                        <div class="col">
+                            <div class="fw-semibold mb-5">Costo</div>
+                                <div id="Costo"></div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
