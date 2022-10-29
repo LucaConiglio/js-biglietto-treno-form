@@ -12,7 +12,7 @@ buttonGenera.addEventListener("click", function () {
 
     const bigliettoStampato = document.getElementById("biglietto-stampato");
 
-    bigliettoStampato.classList.toggle("d-none");
+    bigliettoStampato.classList.remove("d-none");
 
 
     
