@@ -10,7 +10,9 @@ buttonGenera.addEventListener("click", function () {
     nomePasseggero.innerHTML = fullName.value;
     const eta = document.getElementById("fascia-eta");
 
-    
+    const bigliettoStampato = document.getElementById("biglietto-stampato");
+
+    bigliettoStampato.classList.toggle("d-none");
 
 
     
